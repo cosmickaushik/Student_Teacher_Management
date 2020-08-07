@@ -1,0 +1,768 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  
+  
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+  <title>
+    TCO Management
+  </title>
+  <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, shrink-to-fit=no' name='viewport' />
+  <!--     Fonts and icons     -->
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700,200" rel="stylesheet" />
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" rel="stylesheet">
+  <!-- CSS Files -->
+  <link href="assets/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="assets/css/paper-dashboard.css?v=2.0.0" rel="stylesheet" />
+  <!-- CSS Just for demo purpose, don't include it in your project -->
+  <link href="assets/demo/demo.css" rel="stylesheet" />
+</head>
+
+<body class="">
+  <div class="wrapper ">
+    <div class="sidebar" data-color="white" data-active-color="danger">
+      <!--
+        Tip 1: You can change the color of the sidebar using: data-color="blue | green | orange | red | yellow"
+      -->
+      <div class="logo">
+        <a href="#" class="simple-text logo-mini" style="height: 60px; width: 60px;">
+          <div class="logo-image-small" >
+            <img src="assets/img/logo.jpg">
+          </div>
+        </a>
+        <a href="#" class="simple-text logo-normal">
+          Code benders
+
+        </a>
+      </div>
+      <div class="sidebar-wrapper">
+        <ul class="nav">
+          <li class="active ">
+            <a href="dashboard">
+              <i class="nc-icon nc-bank"></i>
+              <p>Dashboard</p>
+            </a>
+          </li>
+          <li class="nav-item btn-rotate dropdown">
+            <a class="nav-link dropdown-toggle" href="http://example.com" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <i class="fas fa-diagnoses"></i>
+              Applied Maths-3
+
+            </a>
+            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownMenuLink">
+              <a class="dropdown-item" href="bulletin">Bulletin</a>
+              <a class="dropdown-item" href="grades">Grades</a>
+
+              <a class="dropdown-item" href="feedback">Feedback</a>
+              <a class="dropdown-item" href="assignments">Assignment</a>
+            </div>
+          </li>
+          <li class="nav-item btn-rotate dropdown">
+            <a class="nav-link dropdown-toggle" href="http://example.com" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <i class="fas fa-diagnoses"></i>
+              DBMS
+
+            </a>
+            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownMenuLink">
+              <a class="dropdown-item" href="bulletin">Bulletin</a>
+              <a class="dropdown-item" href="grades">Grades</a>
+
+              <a class="dropdown-item" href="feedback">Feedback</a>
+              <a class="dropdown-item" href="assignments">Assignment</a>
+            </div>
+          </li>
+          <li class="nav-item btn-rotate dropdown">
+            <a class="nav-link dropdown-toggle" href="http://example.com" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <i class="fas fa-diagnoses"></i>
+              FCS
+
+            </a>
+            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownMenuLink">
+              <a class="dropdown-item" href="bulletin">Bulletin</a>
+              <a class="dropdown-item" href="grades">Grades</a>
+
+              <a class="dropdown-item" href="feedback">Feedback</a>
+              <a class="dropdown-item" href="assignments">Assignment</a>
+            </div>
+          </li>
+          <li class="nav-item btn-rotate dropdown">
+            <a class="nav-link dropdown-toggle" href="http://example.com" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <i class="fas fa-diagnoses"></i>
+              OOPS
+
+            </a>
+            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownMenuLink">
+              <a class="dropdown-item" href="bulletin">Bulletin</a>
+              <a class="dropdown-item" href="grades">Grades</a>
+
+              <a class="dropdown-item" href="feedback">Feedback</a>
+              <a class="dropdown-item" href="assignments">Assignment</a>
+            </div>
+          </li>
+          <li class="nav-item btn-rotate dropdown">
+            <a class="nav-link dropdown-toggle" href="http://example.com" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <i class="fas fa-diagnoses"></i>
+              CGMM
+
+            </a>
+            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownMenuLink">
+              <a class="dropdown-item" href="bulletin">Bulletin</a>
+              <a class="dropdown-item" href="grades">Grades</a>
+
+              <a class="dropdown-item" href="feedback">Feedback</a>
+              <a class="dropdown-item" href="assignments">Assignment</a>
+            </div>
+          </li>
+          
+        </ul>
+      </div>
+    </div>
+    <div class="main-panel">
+      <!-- Navbar -->
+      <nav class="navbar navbar-expand-lg navbar-absolute fixed-top navbar-transparent">
+        <div class="container-fluid">
+          <div class="navbar-wrapper">
+            <div class="navbar-toggle">
+              <button type="button" class="navbar-toggler">
+                <span class="navbar-toggler-bar bar1"></span>
+                <span class="navbar-toggler-bar bar2"></span>
+                <span class="navbar-toggler-bar bar3"></span>
+              </button>
+            </div>
+            <a class="navbar-brand" href="#pablo" style="font-weight: bold;">TCO Management Software</a>
+          </div>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation" aria-controls="navigation-index" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-bar navbar-kebab"></span>
+            <span class="navbar-toggler-bar navbar-kebab"></span>
+            <span class="navbar-toggler-bar navbar-kebab"></span>
+          </button>
+          <div class="collapse navbar-collapse justify-content-end" id="navigation">
+            <form>
+              <div class="input-group no-border">
+                <input type="text" value="" class="form-control" placeholder="Search...">
+                <div class="input-group-append">
+                  <div class="input-group-text">
+                    <i class="nc-icon nc-zoom-split"></i>
+                  </div>
+                </div>
+              </div>
+            </form>
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link btn-magnify" href="#pablo">
+                  <i class="nc-icon nc-layout-11"></i>
+                  <p>
+                    <span class="d-lg-none d-md-block">Stats</span>
+                  </p>
+                </a>
+              </li>
+              <li class="nav-item btn-rotate dropdown">
+                <a class="nav-link dropdown-toggle" href="http://example.com" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  <i class="nc-icon nc-bell-55"></i>
+                  <p>
+                    <span class="d-lg-none d-md-block">Some Actions</span>
+                  </p>
+                </a>
+                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownMenuLink">
+                  <a class="dropdown-item" href="#">Alerts</a>
+                  <a class="dropdown-item" href="#">Calander</a>
+                  <a class="dropdown-item" href="#">Messages</a>
+                </div>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link btn-rotate" href="#pablo">
+                  <i class="nc-icon nc-settings-gear-65"></i>
+                  <p>
+                    <span class="d-lg-none d-md-block">Account</span>
+                  </p>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <!-- End Navbar -->
+      <!-- <div class="panel-header panel-header-lg">
+  
+  <canvas id="bigDashboardChart"></canvas>
+  
+  
+</div> -->
+
+<div class="content">
+  <div class="row">
+
+
+  </div>
+  <div class="row">
+    <div class="col-md-12">
+      <div class="card ">
+        <div class="card-header ">
+          <h5 class="card-title">Student's Performance</h5>
+          <p class="card-category">Last 1 year performance</p>
+        </div>
+        <div class="card-body ">
+          <canvas id="chartHours" width="400" height="100"></canvas>
+           
+        </div>
+        <div class="card-footer ">
+          <hr>
+          <div class="stats">
+            <i class="fa fa-check"></i> Data information certified
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+ <!--  <div class="row">
+    <div class="col-md-4">
+      <div class="card ">
+        <div class="card-header ">
+          <h5 class="card-title">Course Overview</h5>
+          <p class="card-category">Last 24hrs Performance</p>
+        </div>
+        <div class="card-body ">
+          <canvas id="chartEmail"></canvas>
+        </div>
+        <div class="card-footer ">
+          <div class="legend">
+            <i class="fa fa-circle text-primary"></i> Frames Made
+            <i class="fa fa-circle text-warning"></i> Printing
+            <i class="fa fa-circle text-danger"></i> Pasting
+            <i class="fa fa-circle text-gray"></i> Painting
+          </div>
+          <hr>
+          <div class="card-stats">
+            <i class="fa fa-check"></i> Data information certified
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-8">
+      <div class="card card-chart">
+        <div class="card-header">
+          <h5 class="card-title">Success Rate</h5>
+          <p class="card-category">Line Chart with Points</p>
+        </div>
+        <div class="card-body">
+          <canvas id="speedChart" width="400" height="100"></canvas>
+        </div>
+        <div class="card-footer">
+          <hr/>
+          <div class="card-stats">
+            <i class="fa fa-check"></i> Data information certified
+          </div>
+        </div>
+      </div>
+    </div>
+  </div> -->
+
+
+  <div class="row">
+    <div class="col-md-6">
+      <div class="card ">
+        <div class="card-header ">
+          <h5 class="card-title">Performance per subject</h5>
+          <p class="card-category">   </p>
+        </div>
+        <div class="card-body ">
+          <canvas id="chartEmail"></canvas>
+        </div>
+        
+        <div class="card-footer ">
+          <div class="legend">
+            <i class="fa fa-circle text-primary"></i> FCS
+            <i class="fa fa-circle text-warning"></i> Maths
+            <i class="fa fa-circle text-danger"></i> DBMS
+            <i class="fa fa-circle text-gray"></i> OOPS
+            <i class="fa fa-circle text-blue"></i> CGMM
+          </div>
+         <hr>
+         <div class="card-stats">
+          <i class="fa fa-check"></i> Data information certified
+        </div>  
+      </div>
+    </div>
+  </div>
+  <div class="col-md-6">
+    <div class="card card-chart">
+      <div class="card-header">
+        <h5 class="card-title">Success Rate</h5>
+        <p class="card-category">Line Chart with Points</p>
+      </div>
+      <div class="card-body">
+        <canvas id="speedChart" width="400" height="158"></canvas>
+      </div>
+      <div class="card-footer">
+        <i class="fa fa-circle text-primary"></i> My Score
+            <i class="fa fa-circle text-warning"></i> Class Average
+        <hr/>
+        <div class="card-stats">
+          <i class="fa fa-check"></i> Data information certified
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+</div>
+<footer class="footer footer-black  footer-white ">
+  <div class="container-fluid">
+    <div class="row">
+      <nav class="footer-nav">
+        <ul>
+          <li>
+            <a href="#" target="_blank">Code Benders</a>
+          </li>
+          <li>
+            <a href="#" target="_blank">Blog</a>
+          </li>
+          <li>
+            <a href="#" target="_blank">Licenses</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="credits ml-auto">
+        <span class="copyright">
+          ©
+          <script>
+            document.write(new Date().getFullYear())
+          </script>, made with <i class="fa fa-heart heart"></i> by Code Benders
+        </span>
+      </div>
+    </div>
+  </div>
+</footer>
+</div>
+</div>
+<!--   Core JS Files   -->
+<script src="assets/js/core/jquery.min.js"></script>
+<script src="assets/js/core/popper.min.js"></script>
+<script src="assets/js/core/bootstrap.min.js"></script>
+<script src="assets/js/plugins/perfect-scrollbar.jquery.min.js"></script>
+<!--  Google Maps Plugin    -->
+<script src="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY_HERE"></script>
+<!-- Chart JS -->
+<script src="assets/js/plugins/chartjs.min.js"></script>
+<!--  Notifications Plugin    -->
+<script src="assets/js/plugins/bootstrap-notify.js"></script>
+<!-- Control Center for Now Ui Dashboard: parallax effects, scripts for the example pages etc -->
+<script src="assets/js/paper-dashboard.min.js?v=2.0.0" type="text/javascript"></script>
+<!-- Paper Dashboard DEMO methods, don't include it in your project! -->
+<script src="assets/demo/demo.js"></script>
+<script>
+  demo = {
+  initPickColor: function() {
+    $('.pick-class-label').click(function() {
+      var new_class = $(this).attr('new-class');
+      var old_class = $('#display-buttons').attr('data-class');
+      var display_div = $('#display-buttons');
+      if (display_div.length) {
+        var display_buttons = display_div.find('.btn');
+        display_buttons.removeClass(old_class);
+        display_buttons.addClass(new_class);
+        display_div.attr('data-class', new_class);
+      }
+    });
+  },
+
+  initDocChart: function() {
+    chartColor = "#FFFFFF";
+
+    ctx = document.getElementById('chartHours').getContext("2d");
+
+    myChart = new Chart(ctx, {
+      type: 'line',
+
+      data: {
+        labels: ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct"],
+        datasets: [ 
+          {
+            // borderColor: "#fcc468",
+            // backgroundColor: "#fcc468",
+            // pointRadius: 0,
+            // pointHoverRadius: 0,
+            // borderWidth: 3,
+            // data: [370, 394, 415, 409, 425, 445, 460, 450, 478, 484]
+          }
+        ]
+      },
+      options: {
+        legend: {
+          display: false
+        },
+
+        tooltips: {
+          enabled: false
+        },
+
+        scales: {
+          yAxes: [{
+
+            ticks: {
+              fontColor: "#9f9f9f",
+              beginAtZero: false,
+              maxTicksLimit: 5,
+              //padding: 20
+            },
+            // gridLines: {
+            //   drawBorder: false,
+            //   zeroLineColor: "#ccc",
+            //   color: 'rgba(255,255,255,0.05)'
+            // }
+
+          }],
+
+          xAxes: [{
+            barPercentage: 1.6,
+            gridLines: {
+              drawBorder: false,
+              color: 'rgba(255,255,255,0.1)',
+              zeroLineColor: "transparent",
+              display: false,
+            },
+            ticks: {
+              padding: 20,
+              fontColor: "#9f9f9f"
+            }
+          }]
+        },
+      }
+    });
+
+  },
+
+  initChartsPages: function() {
+    chartColor = "#FFFFFF";
+
+    ctx = document.getElementById('chartHours').getContext("2d");
+
+    myChart = new Chart(ctx, {
+      type: 'line',
+
+      data: {
+        labels: ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct"],
+        datasets: [{
+            borderColor: "#6bd098",
+            backgroundColor: "#6bd098",
+            pointRadius: 0,
+            pointHoverRadius: 0,
+            borderWidth: 3,
+            data: [ <%=mark[mark.length-1].sub1%>, 58, <%=mark[mark.length-1].sub2%>, 65, <%=mark[mark.length-1].sub3%>, 26, <%=mark[mark.length-1].sub4%>, 45, <%=mark[mark.length-1].sub5%>, 54]
+          },
+          // {
+          //   borderColor: "#f17e5d",
+          //   backgroundColor: "#f17e5d",
+          //   pointRadius: 0,
+          //   pointHoverRadius: 0,
+          //   borderWidth: 3,
+          //   data: [320, 340, 365, 360, 370, 385, 390, 384, 408, 420]
+          // },
+          // {
+          //   borderColor: "#fcc468",
+          //   backgroundColor: "#fcc468",
+          //   pointRadius: 0,
+          //   pointHoverRadius: 0,
+          //   borderWidth: 3,
+          //   data: [370, 394, 415, 409, 425, 445, 460, 450, 478, 484]
+          // }
+        ]
+      },
+      options: {
+        legend: {
+          display: false
+        },
+
+        tooltips: {
+          enabled: false
+        },
+
+        scales: {
+          yAxes: [{
+
+            ticks: {
+              fontColor: "#9f9f9f",
+              beginAtZero: false,
+              maxTicksLimit: 5,
+              //padding: 20
+            },
+            gridLines: {
+              drawBorder: false,
+              zeroLineColor: "#ccc",
+              color: 'rgba(255,255,255,0.05)'
+            }
+
+          }],
+
+          xAxes: [{
+            barPercentage: 1.6,
+            gridLines: {
+              drawBorder: false,
+              color: 'rgba(255,255,255,0.1)',
+              zeroLineColor: "transparent",
+              display: false,
+            },
+            ticks: {
+              padding: 20,
+              fontColor: "#9f9f9f"
+            }
+          }]
+        },
+      }
+    });
+
+
+
+
+    
+
+
+    ctx = document.getElementById('chartEmail').getContext("2d");
+
+    myChart = new Chart(ctx, {
+      type: 'pie',
+      data: {
+        labels: [1, 2, 3,4],
+        datasets: [{
+          label: "Emails",
+          pointRadius: 0,
+          pointHoverRadius: 0,
+          backgroundColor: [
+            '#e3e3e3',
+            '#4acccd',
+            '#fcc468',
+            '#ef8157',
+            '#000000'
+          ],
+          borderWidth: 0,
+          data: [ <%=mark[mark.length-1].sub1%>,  <%=mark[mark.length-1].sub2%>,  <%=mark[mark.length-1].sub3%>,  <%=mark[mark.length-1].sub4%>, <%=mark[mark.length-1].sub5%>]
+        }]
+      },
+
+      options: {
+
+        legend: {
+          display: false
+        },
+
+        pieceLabel: {
+          render: 'percentage',
+          fontColor: ['white'],
+          precision: 2
+        },
+
+        tooltips: {
+          enabled: false
+        },
+
+        scales: {
+          yAxes: [{
+
+            ticks: {
+              display: false
+            },
+            gridLines: {
+              drawBorder: false,
+              zeroLineColor: "transparent",
+              color: 'rgba(255,255,255,0.05)'
+            }
+
+          }],
+
+          xAxes: [{
+            barPercentage: 1.6,
+            gridLines: {
+              drawBorder: false,
+              color: 'rgba(255,255,255,0.1)',
+              zeroLineColor: "transparent"
+            },
+            ticks: {
+              display: false,
+            }
+          }]
+        },
+      }
+    });
+
+    var speedCanvas = document.getElementById("speedChart");
+
+    var dataFirst = {
+      data: [45, 34, 23, 56, 23, 40, 40, 50, 25, 30, 50, 70],
+      fill: false,
+      borderColor: '#fbc658',
+      backgroundColor: 'transparent',
+      pointBorderColor: '#fbc658',
+      pointRadius: 4,
+      pointHoverRadius: 4,
+      pointBorderWidth: 8,
+    };
+
+    var dataSecond = {
+      data: [ <%=mark[mark.length-1].sub1%>, 5,  <%=mark[mark.length-1].sub2%>, 12,  <%=mark[mark.length-1].sub3%>, 27,  <%=mark[mark.length-1].sub4%>, 34,  <%=mark[mark.length-1].sub5%>, 45,  <%=mark[mark.length-1].sub1%>, 63],
+      fill: false,
+      borderColor: '#51CACF',
+      backgroundColor: 'transparent',
+      pointBorderColor: '#51CACF',
+      pointRadius: 4,
+      pointHoverRadius: 4,
+      pointBorderWidth: 8
+    };
+
+    var speedData = {
+      labels: ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"],
+      datasets: [dataFirst, dataSecond]
+    };
+
+    var chartOptions = {
+      legend: {
+        display: false,
+        position: 'top'
+      }
+    };
+
+    var lineChart = new Chart(speedCanvas, {
+      type: 'line',
+      hover: false,
+      data: speedData,
+      options: chartOptions
+    });
+  },
+
+  initGoogleMaps: function() {
+    var myLatlng = new google.maps.LatLng(40.748817, -73.985428);
+    var mapOptions = {
+      zoom: 13,
+      center: myLatlng,
+      scrollwheel: false, //we disable de scroll over the map, it is a really annoing when you scroll through page
+      styles: [{
+        "featureType": "water",
+        "stylers": [{
+          "saturation": 43
+        }, {
+          "lightness": -11
+        }, {
+          "hue": "#0088ff"
+        }]
+      }, {
+        "featureType": "road",
+        "elementType": "geometry.fill",
+        "stylers": [{
+          "hue": "#ff0000"
+        }, {
+          "saturation": -100
+        }, {
+          "lightness": 99
+        }]
+      }, {
+        "featureType": "road",
+        "elementType": "geometry.stroke",
+        "stylers": [{
+          "color": "#808080"
+        }, {
+          "lightness": 54
+        }]
+      }, {
+        "featureType": "landscape.man_made",
+        "elementType": "geometry.fill",
+        "stylers": [{
+          "color": "#ece2d9"
+        }]
+      }, {
+        "featureType": "poi.park",
+        "elementType": "geometry.fill",
+        "stylers": [{
+          "color": "#ccdca1"
+        }]
+      }, {
+        "featureType": "road",
+        "elementType": "labels.text.fill",
+        "stylers": [{
+          "color": "#767676"
+        }]
+      }, {
+        "featureType": "road",
+        "elementType": "labels.text.stroke",
+        "stylers": [{
+          "color": "#ffffff"
+        }]
+      }, {
+        "featureType": "poi",
+        "stylers": [{
+          "visibility": "off"
+        }]
+      }, {
+        "featureType": "landscape.natural",
+        "elementType": "geometry.fill",
+        "stylers": [{
+          "visibility": "on"
+        }, {
+          "color": "#b8cb93"
+        }]
+      }, {
+        "featureType": "poi.park",
+        "stylers": [{
+          "visibility": "on"
+        }]
+      }, {
+        "featureType": "poi.sports_complex",
+        "stylers": [{
+          "visibility": "on"
+        }]
+      }, {
+        "featureType": "poi.medical",
+        "stylers": [{
+          "visibility": "on"
+        }]
+      }, {
+        "featureType": "poi.business",
+        "stylers": [{
+          "visibility": "simplified"
+        }]
+      }]
+
+    }
+    var map = new google.maps.Map(document.getElementById("map"), mapOptions);
+
+    var marker = new google.maps.Marker({
+      position: myLatlng,
+      title: "Hello World!"
+    });
+
+    // To add the marker to the map, call setMap();
+    marker.setMap(map);
+  },
+
+  showNotification: function(from, align) {
+    color = 'primary';
+
+    $.notify({
+      icon: "nc-icon nc-bell-55",
+      message: "Welcome to <b>Paper Dashboard</b> - a beautiful bootstrap dashboard for every web developer."
+
+    }, {
+      type: color,
+      timer: 8000,
+      placement: {
+        from: from,
+        align: align
+      }
+    });
+  }
+
+};
+</script>
+<script>
+  $(document).ready(function() {
+      // Javascript method's body can be found in assets/assets-for-demo/js/demo.js
+      demo.initChartsPages();
+    });
+  </script>
+</body>
+
+</html>
